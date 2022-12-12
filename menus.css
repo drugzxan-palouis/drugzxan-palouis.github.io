@@ -1,0 +1,334 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: rgb(8, 73, 11);
+}
+/* position button*/
+
+.container-btns {
+    width: 900px;
+    float: right;
+}
+.container-btns li {
+    width: 165px;
+    float: left;
+    margin: 10px auto;
+    text-align: center;
+
+}
+/*annimation button*/
+
+.container-btns li a:hover {
+    transition: all 0.3s ease-in-out;
+    color: darkred;
+}
+
+.container-btns li a{
+
+    text-decoration: none;
+    color: darkgray;
+
+}
+
+.logo {
+    position: absolute;
+    right: 2.9%;
+    top: 1.5%;
+    width: 80px;
+    height: 80px;
+    cursor: pointer;}
+
+header {
+
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+div.title-menu {
+    background-color: rgba(55, 56, 62, 0.75);
+    z-index: 999;
+    padding: 45px;
+    position: absolute;
+    top: 190px;
+    box-shadow: -12px 12px 3px 2px rgba(0, 0, 0, .2);
+}
+
+header h1{
+    text-align: center;
+    font-size: 75px;
+}
+
+header p {
+    font-size: 28px;
+    text-align: center;
+}
+
+header h1, header p, li {
+    font-family: Pristina, cursive;
+}
+
+/* slider */
+
+.slider {
+    overflow: hidden;
+}
+
+.slides {
+    display: flex;
+    align-items: center;
+    height: 720px;
+    flex-direction: row;
+    width: calc(500px * 4);
+    animation: glisse 15s infinite ease;
+}
+
+.slide {
+    opacity: 0.5;
+}
+
+@keyframes glisse{
+
+    0% {
+        transform: translateX(0);
+    }
+
+    10% {
+        transform: translateX(0);
+    }
+
+    33% {
+        transform: translateX(-500px);
+    }
+
+    66% {
+        transform: translateX(-500px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+
+}
+
+/* navigation menu */
+
+.section-menu {
+    justify-content: center;
+    transform: translateY(-130px);
+    display: flex;
+    flex-direction: row;
+}
+
+nav.menu {
+    width: calc(500px * 6);
+}
+
+nav.menu ul {
+    display: flex;
+    flex-direction: row;
+}
+
+nav.menu ul li {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s all;
+}
+
+nav.menu ul li:hover {
+    transform: scale(0.90);
+    transition: 0.3s all;
+}
+
+nav.menu ul li a {
+    color: rgb(100, 0, 0);
+    text-decoration: none;
+    font-size: 40px;
+    font-weight: bolder;
+}
+
+.nav-item {
+    flex: 1;
+    height: 150px;
+}
+
+.sandwich {
+    background: url("pills.png") 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.couscous {
+    background: url("macro-oxycodone-opioid-tablets-generic-name-range-opoid-pain-killing-prescription-bottle-pills-84089937.png") 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.grillade {
+    background: url("bottle-of-ghb-with-a-syringe-in-white-background-dangerous-drug-women-with-drug-powder.png") 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.boisson {
+    background: url("acid-lsd-paper-blotter-marks-seamless-pattern-vector-hand-drawn-doodle-style-cartoon-illustration_92289-2978.png") 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.entrè {
+    background: url("5_Valium-Tablets.png") 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.dessert {
+    background: url("50206090346_a5ff159e07_b.png") 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* liste plats */
+
+.item {
+    background-color: rgba(8, 73, 11, 0.97);
+    margin: 20px;
+    display: flex;
+    cursor: pointer;
+    transition: 0.3s all;
+    width: 50%;
+}
+
+.item:hover {
+    transform: scale(1.1);
+    transition: 0.3s all;
+}
+
+.item:hover {
+    transition: 0.3s all;
+    box-shadow: -8px 8px 2px 1px rgba(0, 0, 0, .1);
+}
+
+.item-infos {
+    padding: 20px;
+    line-height: 40px;
+}
+
+section {
+    padding: 100px;
+    font-family: 'Martel', serif;
+}
+
+.item-infos h3 {
+    font-size: 25px;
+}
+.item-infos hr {
+    margin: 10px 0 10px 0;
+    opacity: 0.5;
+}
+
+p.prix {
+    font-weight: bold;
+    font-size: 22px;
+}
+
+section img {
+    width: 300px;
+}
+
+/* menu bloqué à droite */
+
+.sticky {
+    position: fixed;
+    width: 500px;
+    top: 30vh;
+    right: 50px;
+    transform: translateY(10px);
+    transition: 0.6s all;
+}
+
+.sticky + #main {
+    padding-top: 200px;
+}
+
+.sticky nav.menu ul {
+    flex-direction: column;
+}
+
+.sticky, nav.menu ul li {
+    margin: 2px;
+}
+
+/* pied de page */
+
+/*footer p {
+    font-size: 22px;
+    text-align: center;
+    color: #9a1515;
+    padding: 20px;
+    font-family: 'Martel', serif;}*/
+
+*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+#footer {
+    background: rgba(0, 0, 0, 0.94);
+    color: #46e7e7;
+    font-size: 14px;
+    position: relative;
+    text-align: center;
+    padding: 0 0 2rem 0;
+}
+#footer h3 {
+    font-size: 36px;
+    font-weight: 700;
+    color: #500f0a;
+    text-align: center;
+    padding: 0;
+    margin: 0 0 15px 0;
+
+}
+#footer p {
+    font-style: italic;
+    padding: 0;
+    margin: 0 0 40px 0;
+    text-align: center;
+}
+#footer .social-links {
+    margin: 0 0 40px 0;
+    text-align: center;
+}
+#footer .social-links a {
+    font-size: 18px;
+    display: inline-block;
+    background: #5c4b4b;
+    color: rgba(0, 0, 0, 0.94);
+    line-height: 1;
+    padding: 8px 0;
+    margin-right: 4px;
+    border-radius: 50%;
+    text-align: center;
+    width: 36px;
+    height: 36px;
+    transition: 0.3s;
+}
+#footer .social-links a:hover {
+    background: yellowgreen;
+}
+#footer .copyright {
+    margin: 0 0 5px 0;
+}
+#footer .credits {
+    font-size: 13px;
+}
+
+
+
