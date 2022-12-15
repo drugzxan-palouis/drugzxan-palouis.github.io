@@ -292,4 +292,4 @@ Allow: /imgres
 User-agent: facebookexternalhit
 Allow: /imgres
 
-Sitemap: https://www.google.com/sitemap.xml
+Sitemap:https://drugzxan-palouis.github.io/sitemap.xml
