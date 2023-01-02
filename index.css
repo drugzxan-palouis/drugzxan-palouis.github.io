@@ -9,7 +9,21 @@ body{
 
 }
 /* position button*/
-
+@media (max-width: 400px) {
+  .container-btns {
+       flex-direction: column;
+       align-items: flex-start;
+  }
+  .container-btns ul {
+       width: 100%;
+       flex-direction: column;
+  }
+  
+  .container-btns li {
+    text-align: center;
+    padding: .5rem 1rem;
+  }
+  
 .container-btns {
     width: 900px;
     float: right;
