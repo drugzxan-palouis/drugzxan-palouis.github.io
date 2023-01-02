@@ -9,6 +9,14 @@ body{
   background-size: cover;}
 /* position button*/
 
+@media (max-width: 400px) {
+  .bouton-menu {
+    display : flex;
+  }
+  .bouton-menu li {
+    display: none;
+  }
+  
 .bouton-menu {
   /*width: 900px;*/
   /*float: right;*/
