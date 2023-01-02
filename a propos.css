@@ -9,21 +9,7 @@ body{
   background-size: cover;}
 /* position button*/
 
-@media (max-width: 400px) {
-  .bouton-menu {
-       flex-direction: column;
-       align-items: flex-start;
-  }
-  .bouton-menu ul {
-       width: 100%;
-       flex-direction: column;
-  }
-  
-  .bouton-menu li {
-    text-align: center;
-    padding: .5rem 1rem;
-  }
-  
+
 .bouton-menu {
   /*width: 900px;*/
   /*float: right;*/
